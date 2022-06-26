@@ -20,6 +20,16 @@ module.exports = {
         orange: {
           500: '#FBA94C',
         },
+        brand: {
+          orange: {
+            100: '#FDAC05',
+            200: '#FE6D0B',
+          },
+          blue: {
+            100: '#01D9FF',
+            200: '#016EFD',
+          }
+        },
         red: {
           500: '#F75A68',
         },
@@ -33,6 +43,10 @@ module.exports = {
           900: '#09090A'
         }
       },
+      backgroundImage: {
+        'hero': "url('/images/bg-2.png')",
+      }
+      
     },
   },
   plugins: [],
