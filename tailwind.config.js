@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: 'Roboto, sans-serif',
+      },
       keyframes: {
         hello: {
           '0%': {
@@ -59,6 +62,18 @@ module.exports = {
           600: '#29292E',
           700: '#121214',
           900: '#09090A'
+        },
+        brand: {
+          orange: {
+            50: '#FFCD9C',
+            100: '#FCAE03',
+            200: '#FD6D0C',
+          },
+          blue: {
+            50: '#81D8F7',
+            100: '#18CEF3',
+            200: '#016DFF',
+          },
         }
       },
     },
