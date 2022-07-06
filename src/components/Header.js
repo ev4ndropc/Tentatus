@@ -24,7 +24,7 @@ export default function Header() {
                 <title>{data?.projectMetadatas[0].name}</title>
                 <link rel="shortcut icon" href="https://media.graphassets.com/1AK69ZHGSomWxRMQ7SPJ" type="image/x-icon"/>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
             </Head>
             <header className="w-full py-4 px-5 flex items-center justify-center bg-gray-700 border-b border-gray-600">
