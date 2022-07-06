@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
+import { IoLanguage } from 'react-icons/io5';
+
+import Button from '../components/Button';
 
 export default function Header() {
 
@@ -34,7 +37,7 @@ export default function Header() {
                     <div className="flex-1  relative z-10">
                         <img className="w-52" src="https://media.graphassets.com/xl7SVWSwRu2LKGrvMcT0" />
                     </div>
-                    <div className="w-auto relative z-10">
+                    <div className="w-auto relative z-10 flex items-center">
                         <ul className="flex flex-row items-center">
                             <li className="ml-6 text-md hover:scale-x-105 hover:text-white duration-100">
                                 <a href="#">
@@ -51,13 +54,17 @@ export default function Header() {
                                     Tecnologias
                                 </a>
                             </li>
-                            <li className="ml-6 text-md bg-white border border-white border-opacity-5 bg-opacity-5 hover:bg-opacity-100 hover:bg-brand-orange-200 py-2 px-6 rounded-3xl hover:scale-x-105 hover:text-white duration-100">
+                            <li className="ml-6 text-md hover:scale-x-105 hover:text-white duration-100">
                                 <a href="#">
                                     Fale conosco
                                 </a>
                             </li>
-
                         </ul>
+                        <div className="ml-6 flex items-center">
+                            <Button>
+                                <IoLanguage className="text-white" />
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </header>

@@ -16,7 +16,7 @@ export default function Footer() {
     const { data } = useQuery(GET_ALL_SOCIAL_NETWORKS_QUERY)
     console.log(data)
     return (
-        <footer className="bg-gray-800 text-white p-4 text-center">
+        <footer className="w-full p-6 flex flex-col justify-center items-center border-t border-gray-600">
             <p>Copyright © {new Date().getFullYear()}</p>
         </footer>
     )

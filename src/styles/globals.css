@@ -2,45 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes hello {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
 
-    10% {
-        -webkit-transform: rotate(14deg);
-        transform: rotate(14deg)
-    }
+:root {
+    --brand-orange-50: #FFCD9C;
+    --brand-orange-100: #FCAE03;
+    --brand-orange-200: #FD6D0C;
+    --brand-blue-50: #81D8F7;
+    --brand-blue-100: #18CEF3;
+    --brand-blue-200: #016DFF;
+}
 
-    20% {
-        -webkit-transform: rotate(-8deg);
-        transform: rotate(-8deg)
-    }
 
-    30% {
-        -webkit-transform: rotate(14deg);
-        transform: rotate(14deg)
-    }
-
-    40% {
-        -webkit-transform: rotate(-4deg);
-        transform: rotate(-4deg)
-    }
-
-    50% {
-        -webkit-transform: rotate(10deg);
-        transform: rotate(10deg)
-    }
-
-    60% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-
+@keyframes rainbow {
     to {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
+        transform: translateX(-50%)
     }
 }
 
@@ -49,15 +24,30 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.main-blur{ 
+.main-blur {
     width: 100%;
     height: 100vh;
     position: absolute;
-    background: linear-gradient(90deg, rgb(237 154 2) 0%, rgba(4,4,57,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, var(--brand-orange-100) 0%, rgba(4, 4, 57, 1) 35%, var(--brand-blue-100) 100%);
     filter: blur(216px);
 }
 
 .blur {
     backdrop-filter: saturate(180%) blur(10px);
     box-shadow: rgb(2 1 1 / 10%) 0px 5px 20px -5px;
+}
+
+.rainbow:hover::before {
+    animation: rainbow .75s linear infinite;
+}
+
+.rainbow:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    background-size: 50% 100%;
 }
